@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" rel="stylesheet">
+
+</head>
+<body class="bg-success">
+<h1 style="color:white">Добавление Оценок</h1>
+
+<div class="container mb-5 mt-5">
+    <form action="/marks/add" method="post">
+        <input class="form-control" name="id" placeholder="Введите ID студента которому хотите добавить оценки(это поле обязательно к заполнению)" required type="text"><br>
+        <input class="form-control" max="10" min="1" name="Math" placeholder="Математика" type="number"><br>
+        <input class="form-control" name="Phisycs" placeholder="Физика" type="number" min="1" max="10"><br>
+        <input class="form-control" name="Economics" placeholder="Экономика" type="number" min="1" max="10"><br>
+        <input class="form-control" name="Oop" placeholder="ООП" type="number" min="1" max="10"><br>
+        <input class="form-control" name="Politics" placeholder="Политология" type="number" min="1" max="10"><br>
+        <input class="form-control" name="Webdevelop" placeholder="Веб-разротка" type="number" min="1" max="10"><br>
+        <input class="form-control" name="Russian" placeholder="Русский" type="number" min="1" max="10"><br>
+        <button class="btn btn-success " style="background-color:#ffffff;color:black" type="submit">Добавить оценки</button>
+    </form>
+</div>
+</body>
+</html>
