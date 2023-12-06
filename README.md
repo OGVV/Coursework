@@ -1,8 +1,9 @@
 # Coursework
 Стек технологий:
+Rest API,
+Java,
 Spring Boot ,
-JUNIT,
 Maven,
-JPA,
+Hibernate,
 MySQL,
 HTML5,
